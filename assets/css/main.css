@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +49,7 @@ ul {
 
 .ul {
     gap: 50px;
+    margin-right: 60px;
 }
 
 .li {}
@@ -85,7 +90,7 @@ ul {
 .container {}
 
 .hero-wrap {
-    max-width: 470px;
+    max-width: 530px;
     width: 100%;
 }
 
@@ -133,10 +138,12 @@ ul {
         padding: 0 20px;
     }
 
-    .nav {
+    .ul {
         display: none;
     }
 }
+
+@media (max-width: 520px) {}
 
 .main {}
 
@@ -484,6 +491,7 @@ td {
 
 .footer>.container {
     align-items: start;
+    justify-content: space-between;
     border-bottom: 1px solid #FFFFFF;
     padding-bottom: 50px;
     gap: 80px;
@@ -494,7 +502,7 @@ td {
     margin-bottom: 30px;
 }
 
-.footer>.container>div:nth-child(2, 3)>h3 {
+.footer>.container>div:nth-child(2 3)>h3 {
     font-family: Open Sans;
     font-weight: 400;
     font-size: 24px;
@@ -510,6 +518,8 @@ td {
 }
 
 .footer>.container>div:nth-child(1)>p {
+    max-width: 250px;
+    width: 100%;
     font-family: Open Sans;
     font-weight: 400;
     font-size: 18px;
@@ -579,13 +589,22 @@ td {
         display: grid;
         grid-template-columns: repeat(1, 3fr);
     }
+
     .bottom {
         bottom: 0;
     }
+
     .gallery>div:nth-child(6) {
         margin-bottom: 60px;
     }
-    .footer > .container {
+
+    .footer>.container {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 520px) {
+    .s-gallery>.container>button {
+        padding: 15px 100px;
     }
 }
