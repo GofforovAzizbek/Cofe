@@ -611,3 +611,20 @@ td {
         padding: 15px 100px;
     }
 }
+
+@media (max-width: 400px) {
+    .s-contact {
+        background-color: #0D0402;
+        background-image: none;
+    }
+
+    .s-contact>.container>div {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 320px) {
+    .s-contact>.container>a:nth-child(4) {
+        font-size: 16px;
+    }
+}
