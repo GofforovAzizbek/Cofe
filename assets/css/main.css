@@ -137,14 +137,42 @@ ul {
     .container {
         padding: 0 20px;
     }
-
+    
     .ul {
         display: none;
     }
+
+    .header {
+        background-image: url("../img/hero-mb.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
 }
 
-@media (max-width: 520px) {}
+@media (max-width: 520px) {
+    
+}
 
+@media (max-width: 420px) {
+    .header {
+        background-image: url("../img/hero-mb.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+    .h-left > button:nth-child(1) {
+        display: none;
+    }
+    .banner-scrolling {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .s-gallery>.container>button {
+        padding: 15px 15px;
+    }
+}
 .main {}
 
 .s-selling {
@@ -577,30 +605,30 @@ td {
         flex-wrap: wrap;
         gap: 50px;
     }
-
+    
     .wrap,
     .gallery>div {
         flex-wrap: wrap;
         flex-direction: column;
     }
-
+    
     .news-wrap {
         flex-direction: column;
     }
-
+    
     .gallery {
         display: grid;
         grid-template-columns: repeat(1, 3fr);
     }
-
+    
     .bottom {
         bottom: 0;
     }
-
+    
     .gallery>div:nth-child(6) {
         margin-bottom: 60px;
     }
-
+    
     .footer>.container {
         flex-wrap: wrap;
     }
@@ -608,7 +636,7 @@ td {
 
 @media (max-width: 520px) {
     .s-gallery>.container>button {
-        padding: 15px 100px;
+        padding: 15px 50px;
     }
 }
 
@@ -617,13 +645,13 @@ td {
         background-color: #0D0402;
         background-image: none;
     }
-
+    
     .s-contact>.container>div {
         flex-wrap: wrap;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
     .s-contact>.container>a:nth-child(4) {
         font-size: 16px;
     }
